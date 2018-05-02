@@ -2,6 +2,8 @@
 
 Un sistema simple de TOP asesinatos hecho en DX, es capaz de actualizarse en tiempo real.
 
+![Foto de Panel](https://i.imgur.com/wEADfeW.png)
+
 Formas de uso
 * **Con F5 Abres el panel**
 * **Con /mystats miras tus asesinatos**
