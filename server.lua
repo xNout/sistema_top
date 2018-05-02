@@ -1,3 +1,9 @@
+ -- *	*******************************************	*
+ -- * Developed by:		-Rex-						*
+ -- * Last modified:	01/05/2018					*
+ -- * Description:									*
+ -- *	*******************************************	*
+ 
 local db = dbConnect("sqlite", "top.db");
 
 function createDB( )
@@ -29,7 +35,7 @@ function isPlayerInDB( player )
 end
 
 function refreshPlayersTable( )
-	local dbTable = dbPoll( db:query( "SELECT * FROM top_kills ORDER BY kills ASC LIMIT 20"), -1 )
+	local dbTable = dbPoll( db:query( "SELECT * FROM top_kills ORDER BY kills DESC LIMIT 20"), -1 )
 	triggerClientEvent( root, "updateCTable", root, dbTable )
 end
 

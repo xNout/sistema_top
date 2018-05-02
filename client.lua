@@ -1,6 +1,16 @@
+ -- *	*******************************************	*
+ -- * Developed by:		-Rex-						*
+ -- * Last modified:	01/05/2018					*
+ -- * Description:									*
+ -- *	*******************************************	*
+
+
 local topRows = { }
 local x, y   = guiGetScreenSize( )
 local sx, sy = 1280, 600
+
+
+
 function renderTOP()
 	dxDrawRectangle(( 496 / sx )  * x, ( 105 / sy ) * y, 289, 67 + ( 16 * #topRows ), tocolor(config.windowColor1.r, config.windowColor1.g, config.windowColor1.b, config.windowColor1.alpha), false)
 	dxDrawRectangle(( 496 / sx )  * x, ( 105 / sy ) * y, 289, 39, tocolor(config.windowColor2.r, config.windowColor2.g, config.windowColor2.b, config.windowColor2.alpha), false)
